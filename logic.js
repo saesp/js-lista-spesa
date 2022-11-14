@@ -14,10 +14,10 @@ const foodList = ['pane', 'yogurt', 'pasta', 'uova', 'latte'];
 // }
 
 let ul = document.querySelector('ul.food-list');
-let li = document.createElement('li');
 
 let i = 0;
 while (i < foodList.length){
+    let li = document.createElement('li');
     li.append(foodList[i]); 
     ul.append(li);
     

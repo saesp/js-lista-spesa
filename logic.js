@@ -13,9 +13,17 @@ const foodList = ['pane', 'yogurt', 'pasta', 'uova', 'latte'];
     // console.log(foodList[i]);
 // }
 
+let ul = document.querySelector('ul.food-list');
+let li = document.createElement('li');
+
 let i = 0;
 while (i < foodList.length){
+    li.append(foodList[i]); 
+    ul.append(li);
+    
     console.log(foodList[i]);
     i++;
 }
+
+
 
